@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Vortex Powerline Solutions',
     description: 'We power with the sun',
-    url: 'https://vortexpowerline.com.com',
+    url: 'https://vortexpowerline.com',
     siteName: 'Vortex Powerline Solutions',
     images: [
       {
-        url: 'https://vortexpowerline.com.com/images/og-image.jpg',
+        url: 'https://vortexpowerline.com/images/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Vortex solar panels and clean energy',
@@ -37,10 +37,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning >
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* 👇 Add this manually */}
+        <meta
+          name="google-site-verification"
+          content="fiuidPqRRjGxC7ZmcsjyncBtx1GQ_xwTqE3UgOdx4Bg"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <Navbar />
-          <main>{children}</main>
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
