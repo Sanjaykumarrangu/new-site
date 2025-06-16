@@ -9,31 +9,31 @@ const services = [
     title: 'Solar Panel Setup',
     description: 'We install solar panels for homes and businesses.',
     icon: Sun,
-    href: '/services/solar-installation',
+    href: '/#',
   },
   {
     title: 'System Maintenance',
     description: 'Keep your solar system running smoothly and efficiently.',
     icon: Wrench,
-    href: '/services/maintenance',
+    href: '/#',
   },
   {
     title: 'Expert Advice',
     description: 'Get simple guidance on the best solar options for you.',
     icon: Compass,
-    href: '/services/consulting',
+    href: '/#',
   },
   {
     title: 'Off-Grid Systems',
     description: 'Live independently with solar power in remote areas.',
     icon: Globe2,
-    href: '/services/off-grid',
+    href: '/#',
   },
   {
     title: 'On-Grid Systems',
     description: 'Connect your solar to the public grid for shared energy use.',
     icon: Grid,
-    href: '/services/on-grid',
+    href: '/#',
   },
 ];
 
