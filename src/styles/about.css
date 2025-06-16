@@ -1,0 +1,86 @@
+.about-section {
+  width: 100%;
+  padding: 6rem 2rem;
+  background-color: #fefefe;
+  font-family: 'Inter', sans-serif;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+
+
+
+.about-section.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.about-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1 1 50%;
+  min-width: 280px;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.75rem;
+  color: #047857;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.about-extra {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #374151;
+}
+
+.about-list li {
+  font-size: 1.05rem;
+  margin: 0.5rem 0;
+}
+
+.pm-surya-section {
+  background-color: #f0fdf4;
+  border-radius: 10px;
+  padding: 2rem;
+}
