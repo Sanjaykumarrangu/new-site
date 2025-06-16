@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://www.vortexpowerline.com
+
+# Sitemaps
 Sitemap: https://www.vortexpowerline.com/sitemap.xml

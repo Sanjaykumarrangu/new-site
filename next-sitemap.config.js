@@ -1,9 +1,11 @@
-/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.vortexpowerline.com', 
-  generateRobotsTxt: true,                    
+  siteUrl: 'https://www.vortexpowerline.com',
+  generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }], 
+    policies: [{ userAgent: '*', allow: '/' }],
+    additionalSitemaps: [
+      'https://www.vortexpowerline.com/sitemap.xml',
+    ],
   },
 };
