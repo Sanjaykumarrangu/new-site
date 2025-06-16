@@ -39,7 +39,6 @@ const ContactPage = () => {
   return (
     <main className="bg-white text-black py-18 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 bg-white shadow-lg rounded-lg overflow-hidden p-6">
-        {/* Contact Form */}
         <div>
           <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
           <p className="mb-6 text-gray-700">
@@ -108,7 +107,6 @@ const ContactPage = () => {
           )}
         </div>
 
-        {/* Contact Info + Map */}
         <div className="bg-gray-50 p-6 rounded-md">
           <h3 className="text-xl font-semibold mb-2">Get in Touch</h3>
           <p className="mb-3 text-gray-700">📍 6-100/A, Lakshmipur, Malkapur, Telangana 505451</p>
@@ -123,11 +121,10 @@ const ContactPage = () => {
             💬 Chat on WhatsApp
           </Link>
 
-          {/* Optional Google Map */}
           <div className="mt-6">
             <iframe
               title="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7568.896673703908!2d79.0785017869729!3d18.46332620876542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bccdf9e1b6eefbd%3A0x5d8ea5545b8d0678!2sVORTEX%20POWERLINE%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1750047556011!5m2!1sen!2sin" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4702901836504!2d79.0827091!3d18.462344899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bccdf9e1b6eefbd%3A0x5d8ea5545b8d0678!2sVORTEX%20POWERLINE%20SOLUTIONS!5e0!3m2!1sen!2sin!4v1750076134334!5m2!1sen!2sin" 
               width="100%"
               height="200"
               className="rounded border"
