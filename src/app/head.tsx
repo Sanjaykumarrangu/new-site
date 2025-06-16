@@ -6,6 +6,7 @@ export default function Head() {
       <link rel="icon" href="/favicon.ico" />
       <meta name="robots" content="index, follow" />
       <meta name="theme-color" content="#16a34a" />
+      <meta name="google-site-verification" content="fiuidPqRRjGxC7ZmcsjyncBtx1GQ_xwTqE3UgOdx4Bg" />
     </>
   );
 }
