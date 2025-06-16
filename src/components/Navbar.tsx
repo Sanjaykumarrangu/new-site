@@ -52,7 +52,7 @@ export default function Navbar() {
         {/* Logo and Title */}
         <Link href="/" className="flex items-center gap-3 text-green-700">
           <Image
-            src="/images/logofinal.jpg"
+            src="/logofinal.jpg"
             alt="Vortex Logo"
             width={60}
             height={40}
