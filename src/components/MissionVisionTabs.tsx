@@ -97,7 +97,7 @@ const MissionVisionTabs = () => {
           onClick={() => setLang(lang === 'en' ? 'te' : 'en')}
           className="px-4 py-1.5 text-sm bg-green-500 rounded shadow hover:bg-gray-300 transition"
         >
-          {lang === 'en' ? 'Switch to Telugu' : 'ఇంగ్లీష్‌కు మార్చండి'}
+          {lang === 'en' ? 'తెలుగుకు మారండి' : 'Switch to English'}
         </button>
       </div>
 
