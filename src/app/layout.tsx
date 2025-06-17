@@ -12,7 +12,41 @@ export const metadata: Metadata = {
     template: '%s | Vortex Powerline Solutions',
   },
   description: 'We power with the sun',
-  keywords: ['solar power', 'clean energy', 'vortex', 'renewable energy'],
+  keywords: [
+    'vortex',
+    'vortex solar',
+    'vortex powerline',
+    'vortex powerline solutions',
+    'solar power',
+  'clean energy',
+  'green energy',
+  'renewable energy',
+  'solar installation',
+  'solar panels',
+  'solar energy solutions',
+  'solar subsidy in India',
+  'PM Surya Ghar',
+  'PM Surya Ghar Muft Bijli Yojana',
+  'free electricity scheme India',
+  'solar for homes',
+  'solar rooftop installation',
+  'home solar systems',
+  'government solar subsidy',
+  'MNRE solar scheme',
+  'solar company Tamil Nadu',
+  'solar company Coimbatore',
+  'subsidy on solar panels',
+  'free solar electricity',
+  'reduce electricity bill',
+  'solar battery backup',
+  'solar power for commercial use',
+  'off-grid solar systems',
+  'on-grid solar systems',
+  'best solar company in Telangana',
+  'eco-friendly energy solutions',
+  'solar EPC company',
+
+  ],
   openGraph: {
     title: 'Vortex Powerline Solutions',
     description: 'We power with the sun',
@@ -39,11 +73,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* 👇 Add this manually */}
-        <meta
-          name="google-site-verification"
-          content="fiuidPqRRjGxC7ZmcsjyncBtx1GQ_xwTqE3UgOdx4Bg"
-        />
+        {/* ✅ Manual tags for verification and SEO */}
+        <meta name="google-site-verification" content="fiuidPqRRjGxC7ZmcsjyncBtx1GQ_xwTqE3UgOdx4Bg" />
+        <meta name="keywords" content="solar power, clean energy, vortex, renewable energy, solar installation, solar company in Tamil Nadu, green energy" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#16a34a" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
