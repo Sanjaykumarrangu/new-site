@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'Vortex Powerline Solutions',
     images: [
       {
-        url: 'https://vortexpowerline.com/images/og-image.jpg',
+        url: 'https://vortexpowerline.com/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Vortex solar panels and clean energy',
