@@ -12,7 +12,6 @@ export default function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -27,17 +26,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    const token = localStorage.getItem('adminToken');
-    setIsAdmin(!!token);
-  }, []);
-
+ 
   const navItems = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Services', href: '/services' },
     { label: 'Contact', href: '/contact' },
-    ...(isAdmin ? [{ label: 'Admin', href: '/admin' }] : []),
+    { label: 'Why Choose Us', href: '/why-choose-vortex' },
+
   ];
 
   const navClass = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -71,7 +67,6 @@ export default function Navbar() {
           </div>
         </Link>
 
-        {/* Desktop nav */}
         <ul className="hidden md:flex gap-8 text-gray-700 font-medium">
           {navItems.map(({ label, href }) => (
             <li key={href}>

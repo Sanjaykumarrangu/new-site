@@ -1,8 +1,6 @@
-// app/head.tsx
 export default function Head() {
   return (
     <>
-      {/* Basic Meta */}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
       <meta name="robots" content="index, follow" />
@@ -19,7 +17,6 @@ export default function Head() {
       <meta property="og:type" content="website" />
       <meta property="og:image" content="https://vortexpowerline.com/og-image.png" />
 
-      {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Vortex Powerline Solutions" />
       <meta name="twitter:description" content="We power with the sun. Explore solar panel solutions and Telangana." />
