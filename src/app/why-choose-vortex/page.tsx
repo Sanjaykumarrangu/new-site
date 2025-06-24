@@ -70,6 +70,9 @@ export default function WhyChooseVortex() {
       <p className="mt-6 font-medium">
         ✅ Let’s power Telangana with the sun — one rooftop at a time.
       </p>
+
+
+      
     </main>
   );
 }
