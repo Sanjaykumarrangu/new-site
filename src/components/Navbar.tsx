@@ -83,7 +83,7 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile menu button */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3" style={{color:"green"}}>
           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X /> : <Menu />}
           </button>
@@ -92,8 +92,8 @@ export default function Navbar() {
 
       {/* Mobile nav */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <ul className="flex flex-col gap-4 text-gray-700 font-medium">
+        <div className="md:hidden px-4 pb-4 " >
+          <ul className="flex flex-col gap-4 text-gray-700 font-medium " style={{color:"red",}}>
             {navItems.map(({ label, href }) => (
               <li key={href}>
                 <Link
