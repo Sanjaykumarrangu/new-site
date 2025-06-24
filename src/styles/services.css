@@ -78,21 +78,24 @@
   text-align: center;
 }
 
+/* Fix for Products Grid */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive grid */
+  gap: 1.5rem;
+  justify-items: center; /* centers the cards in each grid cell */
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  padding: 0 1rem;
 }
 
 .product-card {
-  background: white;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
   padding: 1rem;
-  border-radius: 0.5rem;
   text-align: center;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s;
+  width: 100%;
+  max-width: 220px; /* keeps cards neat on all sizes */
 }
 
 .product-card:hover {
