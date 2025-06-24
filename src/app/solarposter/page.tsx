@@ -86,17 +86,7 @@ const SolarPoster = () => {
           </p>
         </div>
 
-        {/* Footer */}
-        <footer className="mt-6 text-center text-xs text-gray-700">
-          <p className="text-blue-700">
-            vortexpowerlinesolutions@gmail.com 
-<button
-  name="contact-us"
-  className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"
->
-  Contact <Contact className="w-4 h-4" />
-</button>          </p>
-        </footer>
+        
       </div>
     </div>
   );
