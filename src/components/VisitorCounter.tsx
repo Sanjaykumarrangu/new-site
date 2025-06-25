@@ -1,19 +1,26 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 
-export default function VisitorCounter() {
+export default function VisitorCount() {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch('/api/visit')
-      .then(res => res.json())
-      .then(data => setCount(data.count));
+    const fetchCount = async () => {
+      try {
+        const res = await fetch('/api/visit');
+        const data = await res.json();
+        setCount(data.count);
+      } catch (error) {
+        console.error('Failed to fetch visitor count:', error);
+      }
+    };
+
+    fetchCount();
   }, []);
 
   return (
-    <p className="text-sm text-center text-gray-600">
-      👀 Site visits: {count ?? '...'}
+    <p className="text-sm">
+      {count === null ? 'Getting visitor count...' : `Visitors: ${count}`}
     </p>
   );
 }
