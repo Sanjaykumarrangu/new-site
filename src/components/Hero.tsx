@@ -15,13 +15,13 @@ const Hero = () => {
   return (
     <section className={`hero-section ${isVisible ? 'visible' : 'hidden'}`}>
       <div className="hero-image-wrapper">
-        <Image
-          src="/bg3.png"
-          alt="Solar Panels Background"
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
+       <Image
+  src="/bg3.png"
+  fill
+  style={{ objectFit: 'cover' }}
+  alt="Background"
+/>
+
         <div className="hero-overlay" />
       </div>
 
