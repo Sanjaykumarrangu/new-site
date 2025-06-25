@@ -1,9 +1,10 @@
 'use client';
 import Link from 'next/link';
+import VisitorCounter from './VisitorCounter';
 
 const Footer = () => {
   return (
-    <footer className="bg-green-100 py-6 text-center text-gray-700 text-sm">
+    <footer className="bg-green-100 py-6 text-center text-gray-800 text-sm">
       <p>📧 Email: vortexpowerlinesolutions@gmail.com</p>
       <p>📞 Phone: 9618797744</p>
 
@@ -16,8 +17,11 @@ const Footer = () => {
       </div>
 
       <p className="mt-4 text-gray-500">
-        © {new Date().getFullYear()} Vortex Powerline Solutions. All rights reserved.
+        © {new Date().getFullYear()} Vortex Powerline Solutions.All rights reserved.
       </p>
+      <div>
+        <VisitorCounter/>
+      </div>
     </footer>
   );
 };
