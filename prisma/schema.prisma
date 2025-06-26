@@ -11,6 +11,6 @@ datasource db {
 
 model Visitor {
   id        Int      @id @default(autoincrement())
-  count     Int      @default(1)
+  count     Int      
   createdAt DateTime @default(now())
 }

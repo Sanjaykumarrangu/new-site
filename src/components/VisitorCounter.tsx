@@ -10,11 +10,7 @@ export default function VisitorCounter() {
       .then((res) => res.json())
       .then((data) => {
         console.log('API response:', data);
-        if (typeof data.count === 'number') {
-          setCount(data.count);
-        } else {
-          setCount(null);
-        }
+        setCount(typeof data.count === 'number' ? data.count : null);
       })
       .catch((err) => {
         console.error('Visitor fetch error:', err);
