@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.vortexpowerline.com
+Host: https://vortexpowerline.com
 
 # Sitemaps
-Sitemap: https://www.vortexpowerline.com/sitemap.xml
+Sitemap: https://vortexpowerline.com/sitemap.xml
