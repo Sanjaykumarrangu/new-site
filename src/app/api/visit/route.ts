@@ -1,10 +1,7 @@
 import { PrismaClient } from '@prisma/client';
-
 const prisma = new PrismaClient();
 
 export async function GET() {
-  console.log('🔍 /api/visit invoked');
-
   try {
     let visitor = await prisma.visitor.findFirst();
 
@@ -21,11 +18,11 @@ export async function GET() {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
-  } catch (err) {
+  } catch (err: any) {
     console.error('❌ /api/visit error:', err);
-    return new Response(JSON.stringify({ error: 'Internal Server Error' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return new Response(
+      JSON.stringify({ error: err.message || 'Internal Server Error' }),
+      { status: 500 }
+    );
   }
 }
