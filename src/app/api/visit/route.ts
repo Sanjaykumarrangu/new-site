@@ -1,4 +1,5 @@
-import { prisma } from '../../../lib/prisma';
+// src/app/api/visit/route.ts
+import { prisma } from '@/lib/prisma';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
@@ -6,9 +7,7 @@ export async function GET() {
     let visitor = await prisma.visitor.findFirst();
 
     if (!visitor) {
-      visitor = await prisma.visitor.create({
-        data: { count: 1 },
-      });
+      visitor = await prisma.visitor.create({ data: { count: 1 } });
     } else {
       visitor = await prisma.visitor.update({
         where: { id: visitor.id },
@@ -17,8 +16,8 @@ export async function GET() {
     }
 
     return NextResponse.json({ count: visitor.count });
-  } catch (error) {
-    console.error('Error:', error);
-    return NextResponse.json({ error: 'Something went wrong' }, { status: 500 });
+  } catch (err) {
+    console.error('Visitor API error:', err);
+    return NextResponse.json({ error: 'Failed to update count' }, { status: 500 });
   }
 }
