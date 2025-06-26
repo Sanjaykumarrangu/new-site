@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="keywords" content="solar power, clean energy, vortex, renewable energy, solar installation, solar company in Tamil Nadu, green energy" />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#16a34a" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logofinal.jpg" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />

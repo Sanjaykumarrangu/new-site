@@ -11,7 +11,7 @@ export default function Head() {
       <meta name="google-site-verification" content="fiuidPqRRjGxC7ZmcsjyncBtx1GQ_xwTqE3UgOdx4Bg" />
 
       {/* Favicon */}
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/logofinal.jpg" />
       <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
       {/* Open Graph Meta */}

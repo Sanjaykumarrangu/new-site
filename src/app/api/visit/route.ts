@@ -1,23 +1,28 @@
-// src/app/api/visit/route.ts
-import { prisma } from '@/lib/prisma';
-import { NextResponse } from 'next/server';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 
 export async function GET() {
+  console.log('🔍 /api/visit invoked');
+  console.log('DATABASE_URL:', process.env.DATABASE_URL?.slice(0,30) + '…');
+
   try {
     let visitor = await prisma.visitor.findFirst();
+    console.log('Found visitor:', visitor);
 
     if (!visitor) {
       visitor = await prisma.visitor.create({ data: { count: 1 } });
+      console.log('Created visitor:', visitor);
     } else {
       visitor = await prisma.visitor.update({
         where: { id: visitor.id },
         data: { count: visitor.count + 1 },
       });
+      console.log('Updated visitor:', visitor);
     }
 
-    return NextResponse.json({ count: visitor.count });
+    return new Response(JSON.stringify({ count: visitor.count }));
   } catch (err) {
-    console.error('Visitor API error:', err);
-    return NextResponse.json({ error: 'Failed to update count' }, { status: 500 });
+    console.error('❌ /api/visit error:', err);
+    return new Response('Internal Error', { status: 500 });
   }
 }
