@@ -196,8 +196,7 @@ The only additional costs you might incur are if your current meter's capacity i
 If you're moving it to another floor within the same house, there won't be any additional meter-related application. However, if the place changes, you'll need to obtain approval from the meter department.`,
       te: `చేసుకోవచ్చు. డిస్‌మాంటిల్ చేసి రీ-ఇన్‌స్టాల్ చేస్తారు. లేబర్ ఛార్జీలు, వైరింగ్ ఛార్జీలు, ఫిట్టింగ్ ఛార్జీలు అవుతాయి.
 
-ఒకవేళ అదే ఇంట్లో ఇంకో అంతస్తు వేసి దానిపైకి షిఫ్ట్ చేసుకున్నట్లయితే మీటర్‌కు సంబంధించి ఎలాంటి అప్లికేషన్ ఉండదు. ప్లేస్ చేంజ్ అయితే మీటర్ వైపు అప్రూవల్ తీసుకోవాల్సి ఉంటుంది.
-`,
+ఒకవేళ అదే ఇంట్లో ఇంకో అంతస్తు వేసి దానిపైకి షిఫ్ట్ చేసుకున్నట్లయితే మీటర్‌కు సంబంధించి ఎలాంటి అప్లికేషన్ ఉండదు. ప్లేస్ చేంజ్ అయితే మీటర్ వైపు అప్రూవల్ తీసుకోవాల్సి ఉంటుంది.`,
     },
   },
 ];
