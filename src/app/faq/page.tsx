@@ -199,6 +199,34 @@ If you're moving it to another floor within the same house, there won't be any a
 ఒకవేళ అదే ఇంట్లో ఇంకో అంతస్తు వేసి దానిపైకి షిఫ్ట్ చేసుకున్నట్లయితే మీటర్‌కు సంబంధించి ఎలాంటి అప్లికేషన్ ఉండదు. ప్లేస్ చేంజ్ అయితే మీటర్ వైపు అప్రూవల్ తీసుకోవాల్సి ఉంటుంది.`,
     },
   },
+
+
+   {
+    question: {
+      en: `How much bank loan can I get? What's the interest rate? How much will be deducted monthly?
+`,
+      te: `బ్యాంక్ లోన్ ఎంత వస్తుంది? వడ్డీ ఎంత? నెలకు ఎంత కట్ అవుతుంది?
+`,
+    },
+    answer: {
+      en: `You can get a bank loan for up to 90% of the total cost. You only need to invest 10% yourself. The annual interest rate is just 6.5% to 7%. You can also choose a loan period of 10, 5, or 3 years.
+
+For example: If your total 3kw system costs ₹2,20,000, the bank will provide 90%, which is ₹1,98,000 as a loan. You'll only need to pay ₹22,000 yourself.
+
+If the loan period is 10 years, your monthly EMI will be around ₹1,800 to ₹1,900. If it's 5 years, your monthly EMI will be around ₹3,600 to ₹3,800.
+
+Within one month of installation, an additional subsidy of ₹78,000 will be directly deposited into your bank account. You can also adjust this amount against your loan principal. You also have the option to foreclose (prepay) the loan.`,
+      te: `బ్యాంక్ లోన్ ఎంత వస్తుంది? వడ్డీ ఎంత? నెలకు ఎంత కట్ అవుతుంది?
+
+మొత్తం ధర పైన 90% వరకు బ్యాంక్ లోన్ తీసుకోవచ్చు. కేవలం 10% మాత్రమే మీరు స్వయంగా పెట్టుబడిగా పెట్టుకుంటే సరిపోతుంది. సంవత్సరానికి కేవలం 6.5% నుంచి 7% వరకే వడ్డీ చెల్లించాలి. మీరు 10, 5, లేదా 3 సంవత్సరాల వరకు కూడా లోన్ పీరియడ్ (కాలవ్యవధి) పెట్టుకోవచ్చు.
+
+ఉదాహరణకు: మీ మొత్తం 3kw వ్యవస్థ ధర ₹2,20,000 అనుకుంటే, అందులో 90% అంటే ₹1,98,000 బ్యాంక్ లోన్ ఇస్తుంది. మీరు కేవలం ₹22,000 మాత్రమే కడితే సరిపోతుంది.
+
+లోన్ పీరియడ్ 10 సంవత్సరాలు అయితే నెలకు ₹1,800 నుంచి ₹1,900 వరకు EMI (ఈఎంఐ) కట్టుకోవాలి. అదే 5 సంవత్సరాలు అయితే నెలకు ₹3,600 నుంచి ₹3,800 వరకు EMI కట్టుకోవాలి.
+
+ఇన్‌స్టాల్ అయిన నెల రోజుల లోపు ₹78,000 అదనపు సబ్సిడీ నేరుగా మీ బ్యాంకు ఖాతాలో జమ అవుతుంది. దానిని మీరు లోన్ మొత్తంలో మాఫీ (సర్దుబాటు) కూడా చేసుకోవచ్చు. లోన్‌ను ముందే ఫోర్‌క్లోజ్ (పూర్తిగా చెల్లించి ముగించడం) చేసుకునే అవకాశం కూడా ఉంది.`,
+    },
+  },
 ];
 
 export default function FAQPage() {
@@ -211,39 +239,35 @@ export default function FAQPage() {
   return (
     <main className=" mx-auto px-4 sm:px-6 py-23  bg-white font-sans">
       {" "}
-      {/* Adjusted px for better responsiveness */}
       <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4 sm:gap-0">
         {" "}
-        {/* Added flex-col for small screens and gap */}
         <h1 className="text-3xl md:text-4xl font-extrabold text-green-700 tracking-tight text-center sm:text-left mb-4 sm:mb-0">
           {" "}
-          {/* Centered title on small screens */}
           PM సూర్యఘర్ యోజన - FAQ
         </h1>
         <button
           onClick={toggleMode}
-          className="bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base px-5 py-2.5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" // Enhanced button styles
+          className="bg-blue-600 hover:bg-blue-700 text-white text-sm md:text-base px-5 py-2.5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" 
         >
           {mode === "te" ? "Switch to English" : "తెలుగుకు మారండి"}
         </button>
       </div>
       <div className="space-y-5 sm:space-y-6">
         {" "}
-        {/* Slightly reduced space for a tighter look or kept it the same based on preference */}
         {faqs.map((faq, idx) => (
           <div
             key={idx}
-            className="bg-gray-50 border border-gray-200 rounded-xl p-5 shadow-sm transition duration-300 ease-in-out hover:shadow-md hover:bg-gray-100 cursor-pointer" // Added cursor-pointer and improved hover effect
+            className="bg-gray-50 border border-gray-200 rounded-xl p-5 shadow-sm transition duration-300 ease-in-out hover:shadow-md hover:bg-gray-100 cursor-pointer" 
           >
             <h3
-              className={`text-lg font-semibold mb-2 ${
-                // Added margin-bottom to question for better separation
-                mode === "te" ? "text-blue-700" : "text-purple-700"
+              className={`text-lg font-semibold mb-2 text-base
+ ${
+                mode === "te" ? "text-red-600" : "text-red-600"
               }`}
             >
               {mode === "te" ? faq.question.te : faq.question.en}
             </h3>
-            <p className="mt-2 text-gray-800 leading-relaxed whitespace-pre-line">
+            <p className="mt-2 text-blue-800 leading-relaxed whitespace-pre-line font-semibold">
               {mode === "te" ? faq.answer.te : faq.answer.en}
             </p>
           </div>
