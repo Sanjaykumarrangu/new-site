@@ -20,7 +20,7 @@ const Footer = () => {
         © {new Date().getFullYear()} Vortex Powerline Solutions.All rights reserved.
       </p>
       <div>
-        {/* <VisitorCounter/> */}
+        <VisitorCounter/>
       </div>
     </footer>
   );

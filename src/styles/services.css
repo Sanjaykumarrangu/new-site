@@ -78,11 +78,12 @@
   text-align: center;
 }
 
+/* Fix for Products Grid */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive grid */
   gap: 1.5rem;
-  justify-items: center; 
+  justify-items: center; /* centers the cards in each grid cell */
   margin-top: 2rem;
   padding: 0 1rem;
 }
@@ -94,7 +95,7 @@
   padding: 1rem;
   text-align: center;
   width: 100%;
-  max-width: 220px; 
+  max-width: 220px; /* keeps cards neat on all sizes */
 }
 
 .product-card:hover {
