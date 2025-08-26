@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import VisitorCounter from './VisitorCounter';
+// import VisitorCounter from './VisitorCounter';
 
 const Footer = () => {
   return (
@@ -19,9 +19,9 @@ const Footer = () => {
       <p className="mt-4 text-gray-500">
         © {new Date().getFullYear()} Vortex Powerline Solutions.All rights reserved.
       </p>
-      <div>
+      {/* <div>
         <VisitorCounter/>
-      </div>
+      </div> */}
     </footer>
   );
 };
