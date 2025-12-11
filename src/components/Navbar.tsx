@@ -33,6 +33,7 @@ export default function Navbar() {
     { label: 'Services', href: '/services' },
     { label: 'Contact', href: '/contact' },
     { label: 'Our Prices', href: '/solarposter' },
+    { label: 'Our Projects', href: '/projects' },
 
     { label: 'Why Choose Us', href: '/why-choose-vortex' },
         { label: 'Solar FAQs', href: '/faq' },
