@@ -26,7 +26,7 @@ export default function ProjectsPage() {
             href={`/projects/${project.slug}`}
             className="block rounded shadow hover:shadow-lg transition"
           >
-            {/* IMAGE BOX */}
+            
             <div className="relative w-full h-48">
               <Image
                 src={project.thumbnail}
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
               />
             </div>
 
-            {/* TITLE BOX */}
+            
             <div className="p-2 bg-white rounded-b text-center">
               <h2 className="text-md font-semibold text-black">
                 {project.name}

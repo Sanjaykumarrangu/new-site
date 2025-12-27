@@ -1,6 +1,6 @@
-// src/app/about/page.tsx
 
-import AboutContent from '../about/AboutContent'; // ✅ Import your component
+
+import AboutContent from '../about/AboutContent'; 
 
 export const metadata = {
   title: 'About | Vortex Powerline Solutions',
@@ -10,7 +10,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main >
-      <AboutContent /> {/* ✅ Render it here */}
+      <AboutContent /> 
     </main>
   );
 }

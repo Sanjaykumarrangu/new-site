@@ -1,4 +1,3 @@
-// src/components/AboutContent.tsx
 'use client';
 
 import Image from 'next/image';
@@ -15,7 +14,7 @@ const AboutContent = () => {
 
   return (
     <section id="about" className={`about-section w-full ${isVisible ? 'visible' : 'hidden'}`}>
-      {/* Main About Section */}
+      
       <div className="about-container">
         <div className="about-text">
           <h2 className="about-title">About Us</h2>
@@ -32,7 +31,7 @@ const AboutContent = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
+      
       <div className="about-extra">
         <h3 className="about-subtitle">Why Choose Us?</h3>
         <ul className="about-list">
@@ -44,7 +43,7 @@ const AboutContent = () => {
         </ul>
       </div>
 
-      {/* PM Surya Ghar Yojana Section */}
+      
       <div className="about-container pm-surya-section">
         <div className="about-image">
           <Image src="/modi.png" alt="PM Surya Ghar Yojana" width={320} height={330} />

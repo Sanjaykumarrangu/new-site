@@ -98,7 +98,7 @@ export default function Navbar() {
       {/* Mobile nav */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 " >
-          <ul className="flex flex-col gap-4 text-gray-700 font-medium " style={{color:"red",}}>
+          <ul className="flex flex-col gap-4 text-gray-700 font-medium " style={{color:"red", fontWeight:"bold"}}>
             {navItems.map(({ label, href }) => (
               <li key={href}>
                 <Link
