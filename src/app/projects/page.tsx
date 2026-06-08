@@ -10,13 +10,14 @@ const projects = [
   { name: "Nizamabad", slug: "nizamabad", thumbnail: "/projects/lift.jpeg" },
   { name: "Hyderabad", slug: "hyderabad", thumbnail: "/projects/finish.jpeg" },
   { name: "Bellampalli", slug: "bellampalli", thumbnail: "/projects/civil.jpeg" },
-  { name: "Metpalli", slug: "metpalli", thumbnail: "/projects/inverter.jpeg" },
   { name: "Mandamarri", slug: "mandamarri", thumbnail: "/projects/earthing.jpeg" },
+    { name: "Khammam", slug: "khammam", thumbnail: "/projects/modi.png" },
+
 ];
 
 export default function ProjectsPage() {
   return (
-    <div className="p-10">
+    <div className="p-10 ">
       <h1 className="text-3xl font-bold mb-6">Our Projects</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -27,12 +28,12 @@ export default function ProjectsPage() {
             className="block rounded shadow hover:shadow-lg transition"
           >
             
-            <div className="relative w-full h-48">
+            <div className="relative w-full h-80 p-2 ">
               <Image
                 src={project.thumbnail}
                 alt={project.name}
                 fill
-                className="object-cover rounded-t"
+                className="object-cover  rounded-t "
               />
             </div>
 

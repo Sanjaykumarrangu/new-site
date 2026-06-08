@@ -17,6 +17,9 @@ const projectImages: ProjectImages = {
   metpalli: ["/pvp/HIMAVARSHA.png"],
   mandamarri: ["/pvp/SWAPNARANI.png"],
   mancherial: ["/pvp/CHANDRASHEKAR.png", "/pvp/LAXMINARAYANA.png","/pvp/RajKumar.png","/pvp/SWAPNARAMULA.png","/pvp/SURESH.png","/pvp/SRINIVASb1.png","/pvp/SRINIVASb2.png","/pvp/SHANKAR.png","/pvp/SHANKARM.png","/pvp/VENKATARAMANA.png","/pvp/RAVINDERBANDI.png","/pvp/RAJENDERALISETTI.png","/pvp/RAJABABU.png","/pvp/MALLESHTHOTA.png","/pvp/RAJAIAH.png",],
+  khammam: ["/pvp/SWAPNARANI.png"],
+
+    
 };
 
 export default function ProjectDetail({

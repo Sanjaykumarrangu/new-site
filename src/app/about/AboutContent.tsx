@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import '../../styles/about.css'; // Adjust the path if needed
+import '../../styles/about.css'; 
 
 const AboutContent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +15,7 @@ const AboutContent = () => {
   return (
     <section id="about" className={`about-section w-full ${isVisible ? 'visible' : 'hidden'}`}>
       
-      <div className="about-container">
+      <div className="about-container ">
         <div className="about-text">
           <h2 className="about-title">About Us</h2>
           <p className="about-description">
